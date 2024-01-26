@@ -42,6 +42,10 @@ When we sum the floating-point numbers 4.0 and 4.0, we get 8.0.
 When we concatenate HackerRank with is the best place to learn and practice coding!, we get HackerRank is the best place to learn and practice coding!.
 '''
 
+i = 4
+d = 4.0
+s = 'HackerRank '
+
 '''
 Declare second integer, double, and String variables.
 '''
