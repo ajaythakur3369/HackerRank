@@ -44,10 +44,6 @@ Author: Paulo Coelho
 Price: 248
 '''
 
-'''
-Write MyBook class
-'''
-
 from abc import ABCMeta, abstractmethod
 class Book(object, metaclass=ABCMeta):
     def __init__(self,title,author):
@@ -55,6 +51,10 @@ class Book(object, metaclass=ABCMeta):
         self.author=author   
     @abstractmethod
     def display(): pass
+
+'''
+Write MyBook class
+'''
 
 class MyBook(Book):
     def __init__(self, title, author, price):
