@@ -36,6 +36,17 @@ T = 4, so your method will insert 4 nodes into an initially empty list.
 First the code returns a new node that contains the data value 2 as the head of the list. Then create and insert nodes 3, 4, and 1 at the tail of the list.
 '''
 
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None 
+class Solution: 
+    def display(self,head):
+        current = head
+        while current:
+            print(current.data,end=' ')
+            current = current.next
+
     def insert(self, head, data):
         if head is None:
             head = Node(data)
@@ -45,7 +56,15 @@ First the code returns a new node that contains the data value 2 as the head of 
                 curr = curr.next
             curr.next = Node(data)
         return head
-        
+
+mylist= Solution()
+T=int(input())
+head=None
+for i in range(T):
+    data=int(input())
+    head=mylist.insert(head,data)    
+mylist.display(head); 	  
+
 '''
 Input (stdin):- 
 4
