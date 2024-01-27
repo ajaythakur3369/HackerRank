@@ -88,3 +88,13 @@ elif ya == ye:
 
 print(fine)
 
+'''
+Input (stdin):- 
+9 6 2015
+6 6 2015
+'''
+
+'''
+Output (stdout):- 
+45
+'''
