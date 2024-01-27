@@ -63,3 +63,18 @@ for _ in range(T):
     n = int(input())
     result = isPrime(n)
     print(result)
+
+'''
+Input (stdin):- 
+3
+12
+5
+7
+'''
+
+'''
+Output (stdout):- 
+Not prime
+Prime
+Prime
+'''
