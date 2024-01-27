@@ -43,6 +43,29 @@ Explanation:-
 N = 6, Explanation, and our non-decreasing list is {1, 2, 2, 3, 3, 4}. The values 2 and 3 both occur twice in the list, so we remove the two duplicate nodes. We then return our updated (ascending) list, which is {1, 2, 3, 4}.
 '''
 
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None 
+class Solution: 
+    def insert(self,head,data):
+            p = Node(data)           
+            if head==None:
+                head=p
+            elif head.next==None:
+                head.next=p
+            else:
+                start=head
+                while(start.next!=None):
+                    start=start.next
+                start.next=p
+            return head  
+    def display(self,head):
+        current = head
+        while current:
+            print(current.data,end=' ')
+            current = current.next
+
     def removeDuplicates(self, head):
         curr = head
         while curr is not None and curr.next is not None:
@@ -50,6 +73,15 @@ N = 6, Explanation, and our non-decreasing list is {1, 2, 2, 3, 3, 4}. The value
                 curr.next = curr.next.next
             curr = curr.next
         return head
+
+mylist= Solution()
+T=int(input())
+head=None
+for i in range(T):
+    data=int(input())
+    head=mylist.insert(head,data)    
+head=mylist.removeDuplicates(head)
+mylist.display(head); 
         
 '''
 Input (stdin):- 
