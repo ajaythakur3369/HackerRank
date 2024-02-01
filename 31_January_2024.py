@@ -80,3 +80,13 @@ def miniMaxSum(arr):
 if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
     miniMaxSum(arr)
+
+'''
+Input (stdin):- 
+1 2 3 4 5
+'''
+
+'''
+Expected Output:- 
+10 14
+'''
