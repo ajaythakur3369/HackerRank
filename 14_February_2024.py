@@ -66,7 +66,6 @@ Sample Output:-
 '''
 
 '''
-
 Explanation:- 
 We'll refer to player 1 as P1 and player 2 as P2
 
